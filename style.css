@@ -77,8 +77,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80');
+  bottom:  0;
+  background-image: url('bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
