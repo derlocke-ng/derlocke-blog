@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>derlocke.net</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-layer"></div>
+  
+  <nav class="taskbar">
+    <div class="logo">
+      <a href="index.html">
+        <span class="prompt-arrow">❯</span><span class="prompt-cmd">cd</span> <span class="prompt-path">/var/home/derlocke</span> <span class="cursor-blink">█</span>
+      </a>
+    </div>
+    <div class="menu-container">
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <div class="menu-dropdown">
+        <ul class="menu">
+          <!--MENU-->
+        </ul>
+        <div class="theme-controls">
+          <div class="theme-row">
+            <span class="theme-label">Theme</span>
+            <button id="darkModeToggle" class="dark-mode-toggle" title="Toggle dark/light mode">🌙</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-wrapper">
+    <button class="post-nav-toggle" id="postNavToggle" aria-label="Toggle post navigation">📑</button>
+    <aside class="post-nav" id="postNav">
+      <div class="post-nav-header">
+        <span class="post-nav-title">📑 Posts</span>
+      </div>
+      <nav class="post-nav-list" id="postNavList">
+        <!--POSTNAV-->
+      </nav>
+    </aside>
+    <main>
+      <!--HOME-->
+      <!--PINNED-->
+      <!--TAGFILTER-->
+      <!--LATEST-->
+    </main>
+  </div>
+
+  <div class="service-dock">
+    <div class="dock-content">
+      <span class="dock-label">Services:</span>
+      <a href="services.html#vpn" class="dock-item" title="VPN Access">🔐 VPN</a>
+      <a href="services.html#xmpp" class="dock-item" title="XMPP Chat">💬 XMPP</a>
+      <a href="services.html#paste" class="dock-item" title="PrivateBin">📋 Paste</a>
+      <a href="services.html#mumble" class="dock-item" title="Mumble Voice">🎙️ Mumble</a>
+      <a href="services.html#git" class="dock-item" title="Git Repos">📦 Git</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <!--FOOTERLINKS-->
+      </div>
+      <div class="footer-info">
+        <span>© 2026 derlocke.net · <a href="mailto:derlocke@derlocke.net">Contact</a> · Powered by <a href="https://github.com/derlocke-ng/kiwi-blog" target="_blank">🥝 Kiwi Blog</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>
