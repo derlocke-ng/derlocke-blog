@@ -365,4 +365,23 @@ function applyTagFilter(selectedTag, tagButtons, blogEntries, postNavItems, arch
       }
     }
   });
+  
+  // Update archive year counters to reflect visible posts
+  const archiveYears = document.querySelectorAll('.archive-year');
+  archiveYears.forEach(yearSection => {
+    const visiblePosts = yearSection.querySelectorAll('.archive-post-link:not(.tag-hidden)');
+    const postCountEl = yearSection.querySelector('.post-count');
+    
+    if (postCountEl) {
+      const count = visiblePosts.length;
+      postCountEl.textContent = count === 1 ? '1 post' : `${count} posts`;
+    }
+    
+    // Hide entire year section if no visible posts
+    if (visiblePosts.length === 0) {
+      yearSection.classList.add('tag-hidden');
+    } else {
+      yearSection.classList.remove('tag-hidden');
+    }
+  });
 }
