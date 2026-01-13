@@ -923,11 +923,6 @@ footer {
   .dock-label {
     display: none;
   }
-  
-  footer {
-    margin-bottom: 60px;
-    padding-bottom: 1.5rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -960,38 +955,6 @@ footer {
 
   .post-date {
     min-width: auto;
-  }
-  
-  footer {
-    margin-bottom: 70px;
-    padding: 1.2rem 0.8rem;
-    padding-bottom: 2rem;
-  }
-  
-  .footer-content {
-    font-size: 0.85rem;
-  }
-  
-  .footer-info {
-    font-size: 0.8rem;
-    line-height: 1.5;
-  }
-}
-
-/* Safe area support for devices with notches/home indicators */
-@supports (padding-bottom: env(safe-area-inset-bottom)) {
-  footer {
-    margin-bottom: calc(52px + env(safe-area-inset-bottom));
-  }
-  
-  .service-dock {
-    padding-bottom: env(safe-area-inset-bottom);
-  }
-  
-  @media (max-width: 480px) {
-    footer {
-      margin-bottom: calc(70px + env(safe-area-inset-bottom));
-    }
   }
 }
 
