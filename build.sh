@@ -282,11 +282,6 @@ rm -f /tmp/home.html /tmp/pinned.html /tmp/latest.html /tmp/archive.html \
       /tmp/menu_links.html /tmp/footer_links.html /tmp/page_content.html \
       /tmp/postnav.html /tmp/tagfilter.html 2>/dev/null || true
 
-# Generate transparency manifest
-if [ -f "./generate-manifest.sh" ]; then
-  bash ./generate-manifest.sh
-fi
-
 echo "✅ Site built successfully!"
 echo "   - $OUTPUT"
 echo "   - $ARCHIVE_OUTPUT"

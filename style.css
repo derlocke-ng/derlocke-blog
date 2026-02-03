@@ -930,8 +930,9 @@ footer {
     font-size: 0.75rem;
   }
 
-  .prompt-cmd {
-    display: none;
+  .prompt-cmd,
+  .prompt-path {
+    display: inline; /* Keep full logo visible */
   }
 
   main {

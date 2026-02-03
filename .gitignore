@@ -1,6 +1,8 @@
 # Generated files
 index.html
 archive.html
+transparency.html
+projects.html
 
 # OS files
 .DS_Store
@@ -15,3 +17,4 @@ Thumbs.db
 
 # Temp files
 /tmp/
+/kiwi-network/
